@@ -51,8 +51,6 @@ int main (int argc, char *argv[]) {
         printf("Could not proceed to cpu pinning\n");
         return 1;
     }
-    //syscall(__NR_sched_setaffinity, 0, size, cpusetp);
-    printf("set affinity: %s\n", (cpu_set_t)cpusetp);
 
     time_t t = time(NULL);
     //printf("Time at startup %d\n", (int)t);
