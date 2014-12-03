@@ -22,17 +22,19 @@ int main (int argc, char **argv) {
     time_t t = 0;
     int dt = t_start + duration;
 
-    char *access = (char *)malloc(sizeof(int));
+    int *access = (int *)malloc(4*sizeof(int));
 
     int read[4];
 
     while (t < dt ) {
-        read[0] = (int)access[0];
-        read[1] = (int)access[1];
-        read[2] = (int)access[2];
-        read[3] = (int)access[3];
+        read[0] = access[0];
+        read[1] = access[1];
+        read[2] = access[2];
+        read[3] = access[3];
         
         t = time(NULL);
+	free(access);
+        access = (int *)malloc( 4*sizeof(int) );
     }
 
     printf("using the var, you know... %d, %d, %d, %d\n", read[0], read[1], read[2], read[3]);
