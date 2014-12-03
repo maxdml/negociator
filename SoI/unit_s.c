@@ -4,13 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <sys/time.h>
 #include <unistd.h>
 #include <sys/syscall.h>
 
 int main (int argc, char *argv[]) {
 
     int option;
-    int duration;
+    float duration;
     char type;
     int pin;
 
@@ -29,7 +30,7 @@ int main (int argc, char *argv[]) {
                 type = 'i'; 
                 break;
             case 'd' :
-                duration = atoi(optarg);
+                duration = atof(optarg);
                 break;
             case 'p' :
                 pin = atoi(optarg); 
@@ -52,11 +53,11 @@ int main (int argc, char *argv[]) {
         return 1;
     }
 
-    time_t t = time(NULL);
-    //printf("Time at startup %d\n", (int)t);
-
-    int dt = t + duration;
-    //printf("Time to reach %d\n", dt);
+//get time in milliseconds and end time
+    struct timeval t;
+    gettimeofday(&t, NULL);
+    long long milliseconds = t.tv_sec*1000LL + t.tv_usec/1000;
+    long long endTime = milliseconds + (long)(duration*1000);
 
     float result = 0;
     int c = 1;
@@ -67,7 +68,9 @@ int main (int argc, char *argv[]) {
 
             result = value * value;
 
-            if (dt <= time(NULL)) {
+            gettimeofday(&t, NULL);
+            milliseconds = t.tv_sec*1000LL + t.tv_usec/1000;
+            if (endTime <= milliseconds) {
                 c = 0;
             }
         }
@@ -76,9 +79,10 @@ int main (int argc, char *argv[]) {
             int value = 3;
 
             result = value * value;
-
-            if (dt <= (int)time(NULL)) {
-                //printf("Time elapsed %d\n", (int)(time(NULL)));
+	    
+            gettimeofday(&t, NULL);
+            milliseconds = t.tv_sec*1000LL + t.tv_usec/1000;
+            if (endTime <= milliseconds) {
                 c = 0;
             }
         }
@@ -90,3 +94,4 @@ int main (int argc, char *argv[]) {
 
     return 0;
 }
+
