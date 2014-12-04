@@ -1,0 +1,81 @@
+benchmark,configuration,performance
+"bodytrack", "config 4",2.3545
+"canneal", "config 4",1.5668
+"cmake", "config 4",1.4262
+"ferret", "config 4",3.7215
+"fluidanimate", "config 4",2.4368
+"freqmin", "config 4",1.2797
+"glib", "config 4",1.3891
+"gsl", "config 4",1.4585
+"libjpeg", "config 4",1.4181
+"parmacs", "config 4",1.4956
+"streamcluster", "config 4",1.9145
+"swaptions", "config 4",3.6823
+"vips", "config 4",3.6175
+"bodytrack", "config 5",2.7628
+"canneal", "config 5",1.6515
+"cmake", "config 5",1.5522
+"ferret", "config 5",4.1075
+"fluidanimate", "config 5",2.7801
+"freqmin", "config 5",1.3077
+"glib", "config 5",1.5799
+"gsl", "config 5",1.592
+"libjpeg", "config 5",1.5583
+"parmacs", "config 5",1.5218
+"streamcluster", "config 5",3.0431
+"swaptions", "config 5",3.8338
+"vips", "config 5",3.0283
+"bodytrack", "config 6",4.7551
+"canneal", "config 6",2.1301
+"cmake", "config 6",3.0129
+"ferret", "config 6",3.4375
+"fluidanimate", "config 6",0.2806
+"freqmin", "config 6",0.2335
+"glib", "config 6",2.65
+"gsl", "config 6",2.6802
+"libjpeg", "config 6",2.9539
+"parmacs", "config 6",3.2719
+"streamcluster", "config 6",4.224
+"swaptions", "config 6",5.3714
+"vips", "config 6",5.1055
+"bodytrack", "config 7",3.624
+"canneal", "config 7",1.6854
+"cmake", "config 7",2.1482
+"ferret", "config 7",4.5674
+"fluidanimate", "config 7",3.2172
+"freqmin", "config 7",1.7918
+"glib", "config 7",2.1413
+"gsl", "config 7",2.2054
+"libjpeg", "config 7",2.0867
+"parmacs", "config 7",2.1347
+"streamcluster", "config 7",2.7392
+"swaptions", "config 7",4.1236
+"vips", "config 7",4.2046
+"streamcluster","config 1",2.747
+"bodytrack","config 1",5.222
+"canneal","config 1",2.202
+"facesim","config 1",2.525
+"ferret","config 1",6.391
+"fluidanimate","config 1",5.619
+"freqmin","config 1",5.322
+"swaptions","config 1",5.391
+"vips","config 1",6.788
+"x264","config 1",4.451
+"streamcluster","config 2",0.555
+"bodytrack","config 2",0.033
+"canneal","config 2",1.094
+"facesim","config 2",0.008
+"ferret","config 2",0.497
+"fluidanimate","config 2",1.861
+"freqmin","config 2",2.381
+"swaptions","config 2",0.496
+"vips","config 2",0.015
+"x264","config 2",0.338
+"streamcluster","config 3",1.601
+"bodytrack","config 3",2.200
+"canneal","config 3",0.785
+"ferret","config 3",3.146
+"fluidanimate","config 3",2.471
+"freqmin","config 3",2.347
+"swaptions","config 3",5.097
+"vips","config 3",5.906
