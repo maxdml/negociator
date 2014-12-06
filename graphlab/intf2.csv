@@ -1,0 +1,10 @@
+benchmark,SoI,Sensitivity
+"bodytrack","SoI1",5
+"canneal","SoI1",7.5
+"freqmine","SoI1",7.5
+"canneal","SoI2",28
+"ferret","SoI2",50
+"freqmine","SoI2",35
+"ferret","SoI3",20
+"freqmine","SoI3",20
+"bodytrack","SoI2",35
