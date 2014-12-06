@@ -79,3 +79,15 @@ benchmark,configuration,performance
 "freqmin","config 3",2.347
 "swaptions","config 3",5.097
 "vips","config 3",5.906
+"bodytrack_4c","config 5",5.76
+"bodytrack_4c","config 7",5.919
+"ferret_4c","config 5",7.824
+"ferret_4c","config 7",8.009
+"freqmine_4c","config 5",8.495
+"freqmine_4c","config 7",9.474
+"streamcluster_6c","config 7",10.617
+"streamcluster_6c","config 4",7.618
+"canneal_6c","config 7",2.076
+"canneal_6c","config 4",2.001
+"x264_6c","config 7",5.69
+"x264_6c","config 4",4.828
